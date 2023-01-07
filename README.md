@@ -11,7 +11,7 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 ### Links
 
-- Solution URL: [[Add solution URL here](https://github.com/DestroctorGT/News-homepage)]
+- Solution URL: [(https://github.com/DestroctorGT/News-homepage)]
 - Live Site URL: [Add live site URL here]
 
 ### Built with
