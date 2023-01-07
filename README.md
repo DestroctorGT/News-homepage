@@ -12,7 +12,7 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 ### Links
 
 - Solution URL: [(https://github.com/DestroctorGT/News-homepage)]
-- Live Site URL: [Add live site URL here]
+- Live Site URL: [https://destroctorgt.github.io/News-homepage/]
 
 ### Built with
 
