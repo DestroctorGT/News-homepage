@@ -1,0 +1,255 @@
+body {
+  margin: 25px;
+  padding: 0;
+}
+
+ul.navigation {
+  margin: auto;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul.navigation--desktop-aside-menu {
+  display: none;
+}
+
+article {
+  margin: 25px auto;
+  display: grid;
+}
+
+aside {
+  padding: 20px;
+  background-color: hsl(240, 100%, 5%);
+}
+
+section {
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+footer {
+  margin: 24px auto 5px;
+  text-align: center;
+  line-height: 25px;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+}
+
+.logo {
+  width: 100%;
+  max-width: 50px;
+  height: auto;
+}
+
+.logo__mobile-article-img {
+  max-width: 400px;
+  grid-column: 1 / 2;
+}
+
+.logo__desktop-article-img {
+  display: none;
+}
+
+.logo__section {
+  max-width: 120px;
+}
+
+.button {
+  margin: auto auto auto 1px;
+  padding: 15px 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 5px;
+  color: hsl(36, 100%, 99%);
+  background-color: hsl(5, 85%, 63%);
+}
+
+.button:hover {
+  background-color: hsl(240, 100%, 5%);
+}
+
+.button--mobile-menu-aside {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.button--mobile-menu-aside:hover {
+  background-color: white;
+}
+
+.title {
+  margin: 15px auto;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.title__aside-title {
+  margin: 20px auto;
+  color: hsl(35, 77%, 62%);
+  text-transform: capitalize;
+}
+
+.title__section-title {
+  margin: 0;
+  font-size: 30px;
+  color: hsl(233, 8%, 79%);
+}
+
+.title__subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: hsl(36, 100%, 99%);
+}
+
+.title__subtitle-section {
+  margin: 5px auto;
+  font-size: 17px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+}
+
+.section-txt {
+  margin: auto auto 18px auto;
+  text-align: justify;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  color: hsl(236, 13%, 42%);
+}
+
+.section-txt__brighter {
+  color: hsl(233, 8%, 79%);
+}
+
+.section-txt__small {
+  margin: 0;
+  letter-spacing: normal;
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+  }
+
+  li.button-class {
+    display: none;
+  }
+
+  ul.navigation--desktop-aside-menu {
+    display: flex;
+    text-transform: capitalize;
+    gap: 25px;
+  }
+
+  ul.navigation--desktop-aside-menu > li > a {
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: hsl(236, 13%, 42%);
+  }
+
+  ul.navigation--desktop-aside-menu > li > a:hover {
+    color: hsl(35, 77%, 62%);
+  }
+
+  article {
+    grid-template-columns: 300px 420px 0px;
+    grid-template-rows: 320px 100px 100px;
+  }
+
+  aside {
+    width: 350px;
+    height: 480px;
+  }
+
+  section {
+    padding: 50px;
+    gap: 10px;
+    align-items: center;
+    grid-template-columns: auto auto auto auto auto auto;
+  }
+
+  .logo__section {
+    max-width: 100px;
+  }
+
+  .logo__desktop-article-img {
+    display: grid;
+    max-width: 720px;
+    grid-column: 1 / 4;
+  }
+
+  .title {
+    font-size: 50px;
+    line-height: 50px;
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+  }
+
+  .title__subtitle {
+    text-decoration: none;
+    font-size: 22px;
+  }
+
+  a.title__subtitle:hover {
+    color: hsl(35, 77%, 62%);
+  }
+
+  .title__section-title {
+    margin: 0px 0px 10px 0px;
+    font-size: 25px;
+    line-height: 0px;
+  }
+
+  .section-txt__small {
+    width: 230px;
+    height: auto;
+  }
+
+  .title__subtitle-section {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+  }
+
+  a.title__subtitle-section:hover {
+    color: hsl(35, 77%, 62%);
+  }
+
+  .button {
+    grid-column: 2 / 2;
+  }
+
+  .logo__mobile-article-img {
+    display: none;
+  }
+
+  .button--menu-aside {
+    display: none;
+  }
+}
